@@ -16,29 +16,19 @@ Building the project
 
 	`cd $GOPATH/src` 
 
-	`mkdir -p github.com/openblockchain/obc-test` 
-	
-	`cd github.com/openblockchain` 
-	
-	`git clonehttps://github.com//obc-test.git` 
+	`git clone https://github.com/2016Nishi/hyperledger-GoSDK.git
 	
 
 3. To build code :
 
- P.S. Change the path location to json files `"NetworkCredentials.json"` and `"CC_COllection.json"` inside `obcsdk/peernetwork/peerNetworkSetup.go` to your local path. Currently it is set as in windows
+ P.S. Change the path location to json files `"NetworkCredentials.json"` and `"CC_COllection.json"` inside `obcsdk/peernetwork/peerNetworkSetup.go` to your local path. Currently it is set as 
  
- `C:/Go/Src/github.com/openblockchain/obc-test/obcsdk/util.`
+ `/home/nishi/go/src/obcsdk/util.` on my unix system
  
- `go build github.com/openblockchain/obc-test/obcsdk/chaincode`
  
- `github.com/openblockchain/obc-test/obcsdk/peernetwork`
- 
- `github.com/openblockchain/obc-test/obcsdk/peerrest`
-		  
-
 4. To Run sample test program:
 
-	`cd $GOPATH/src/github.com/openblockchain/obc-test/obcsdk/chcotest`
+	`cd $GOPATH/src/obcsdk/chcotest`
 	
 	`go run RestCalls.go Deploy_With_Tagname.go`
 
@@ -47,11 +37,11 @@ Building the project
 	`cd $GOPATH/src`
 	
 
-	`go install github.com/openblockchain/obc-test/obcsdk/chaincode`
+	`go install obcsdk/chaincode`
 	
-	`github.com/openblockchain/obc-test/obcsdk/peernetwork`
+	           `obcsdk/peernetwork`
 	      
-	 `github.com/openblockchain/obc-test/obcsdk/peerrest`
+	           `obcsdk/peerrest`
 
 	launch git bash command
 
@@ -60,5 +50,5 @@ Building the project
 	`godoc server godoc -http=":6060"`
 
 6. To view go doc on browser:
-	Open a browser and launch `http://localhost:6060/pkg/github.com/openblockchain/obc-test/obcsdk` 
+	Open a browser and launch `http://localhost:6060/pkg/obcsdk` 
 	above url lists available obcsdk API and it's usage.
