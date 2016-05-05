@@ -26,13 +26,15 @@ Building the project
  `/home/nishi/go/src/obcsdk/util.` on my unix system
  
  
-4. To Run sample test program:
+4. Launch hyperledger fabric peer on your local machine inside vagrant to run using default `"NetworkCredentials.json"` or change peer IP addresses/ports and users in `"NetworkCredentials.json"` before running the test program to send requests.
 
+5. To Run sample test program:
+ 
 	`cd $GOPATH/src/obcsdk/chcotest`
 	
 	`go run RestCalls.go Deploy_With_Tagname.go`
 
-5. To see what commands are available, or to generate go doc:
+6. To see what commands are available, or to generate go doc:
 
 	`cd $GOPATH/src`
 	
@@ -49,6 +51,6 @@ Building the project
 
 	`godoc server godoc -http=":6060"`
 
-6. To view go doc on browser:
+7. To view go doc on browser:
 	Open a browser and launch `http://localhost:6060/pkg/obcsdk` 
 	above url lists available obcsdk API and it's usage.
